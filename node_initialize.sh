@@ -28,9 +28,9 @@ server=1
 daemon=1
 logtimestamps=1
 txindex=1
-znode=1
+masternode=1
 externalip=$WANIP:12972
-znodeblsprivkey=$KEY
+masternodeblsprivkey=$KEY
 EOF
 
 while true; do
