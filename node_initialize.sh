@@ -18,6 +18,12 @@ get_ip
 RPCUSER=$(pwgen -1 8 -n)
 PASSWORD=$(pwgen -1 20 -n)
 
+echo RPCUSER=$RPCUSER >> ~/.bashrc
+echo PASSWORD=$PASSWORD >> ~/.bashrc
+echo RPCPORT=12972 >> ~/.bashrc
+
+source ~/.bashrc
+
 if [[ -f /root/.blocx/blocx.conf ]]; then
   rm  /root/.blocx/blocx.conf
 fi

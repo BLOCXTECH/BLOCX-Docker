@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+source ~/.bashrc
+
+RPCUSER=$RPCUSER 
+RPCPASSWORD=$PASSWORD 
+RPCHOST=127.0.0.1
+RPCPORT=12972 
+
 if [[ ! -d /root/.blocx/sentinel ]]; then 
   cd /root/.blocx
   git clone https://github.com/BLOCXTECH/sentinel.git
