@@ -1,7 +1,7 @@
 ARG UBUNTUVER=20.04
 FROM ubuntu:${UBUNTUVER}
 LABEL com.centurylinklabs.watchtower.enable="true"
-ARG BLOCX_VERSION="3.3.0"
+ARG BLOCX_VERSION="4.0.1"
 RUN mkdir -p /root/.blocx
 RUN mkdir -p /var/log/supervisor
 RUN apt-get update && apt-get install -y  tar wget curl pwgen jq supervisor cron git python3-virtualenv nano
