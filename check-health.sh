@@ -14,7 +14,7 @@ function max(){
 
 NETWORK=(
 "$(curl -SsL https://api-explorer.blocxscan.com/api/getblockcount)"
-"$(curl -SsL  https://ex1.blocxscan.com/api/ | jq .backend.blocks)"
+"$(curl -SsL  https://ex1.blocxscan.com/api/v2/status | jq .backend.blocks)"
 )
 
 CURRENT_NODE_HEIGHT=$(blocx-cli getblockchaininfo | jq '.blocks')
